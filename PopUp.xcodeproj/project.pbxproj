@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450072BF2A38CC2600961FD7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450072BE2A38CC2600961FD7 /* MainViewController.swift */; };
+		45D1FFA92A38C55C009C6EDE /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1FFA82A38C55C009C6EDE /* Labels.swift */; };
 		84A1CB8A2A389F330058B8C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1CB892A389F330058B8C7 /* AppDelegate.swift */; };
 		84A1CB8C2A389F330058B8C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1CB8B2A389F330058B8C7 /* SceneDelegate.swift */; };
 		84A1CB8E2A389F330058B8C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1CB8D2A389F330058B8C7 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		2C36CF4B3E754B795EC7AE8B /* Pods_PopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4282367FBCCE581FB1FFB7B0 /* Pods-PopUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopUp.release.xcconfig"; path = "Target Support Files/Pods-PopUp/Pods-PopUp.release.xcconfig"; sourceTree = "<group>"; };
+		450072BE2A38CC2600961FD7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		45D1FFA82A38C55C009C6EDE /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		5C8AE830B2E28BA23C775400 /* Pods-PopUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopUp.debug.xcconfig"; path = "Target Support Files/Pods-PopUp/Pods-PopUp.debug.xcconfig"; sourceTree = "<group>"; };
 		84A1CB862A389F330058B8C7 /* PopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A1CB892A389F330058B8C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +54,6 @@
 				5C8AE830B2E28BA23C775400 /* Pods-PopUp.debug.xcconfig */,
 				4282367FBCCE581FB1FFB7B0 /* Pods-PopUp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,8 +80,10 @@
 			children = (
 				84A1CB892A389F330058B8C7 /* AppDelegate.swift */,
 				84A1CB8B2A389F330058B8C7 /* SceneDelegate.swift */,
+				450072BE2A38CC2600961FD7 /* MainViewController.swift */,
 				84A1CB8D2A389F330058B8C7 /* ViewController.swift */,
 				84A1CB9D2A389F950058B8C7 /* PopUpTableViewCell.swift */,
+				45D1FFA82A38C55C009C6EDE /* Labels.swift */,
 				84A1CB8F2A389F330058B8C7 /* Main.storyboard */,
 				84A1CB922A389F340058B8C7 /* Assets.xcassets */,
 				84A1CB942A389F340058B8C7 /* LaunchScreen.storyboard */,
@@ -211,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A1CB8E2A389F330058B8C7 /* ViewController.swift in Sources */,
+				45D1FFA92A38C55C009C6EDE /* Labels.swift in Sources */,
 				84A1CB8A2A389F330058B8C7 /* AppDelegate.swift in Sources */,
+				450072BF2A38CC2600961FD7 /* MainViewController.swift in Sources */,
 				84A1CB9E2A389F950058B8C7 /* PopUpTableViewCell.swift in Sources */,
 				84A1CB8C2A389F330058B8C7 /* SceneDelegate.swift in Sources */,
 			);
@@ -368,6 +375,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +404,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
