@@ -14,9 +14,13 @@
 		84A1CB932A389F340058B8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A1CB922A389F340058B8C7 /* Assets.xcassets */; };
 		84A1CB962A389F340058B8C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A1CB942A389F340058B8C7 /* LaunchScreen.storyboard */; };
 		84A1CB9E2A389F950058B8C7 /* PopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1CB9D2A389F950058B8C7 /* PopUpTableViewCell.swift */; };
+		CA7B4DBDA9CF87717BBD0E44 /* Pods_PopUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C36CF4B3E754B795EC7AE8B /* Pods_PopUp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C36CF4B3E754B795EC7AE8B /* Pods_PopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4282367FBCCE581FB1FFB7B0 /* Pods-PopUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopUp.release.xcconfig"; path = "Target Support Files/Pods-PopUp/Pods-PopUp.release.xcconfig"; sourceTree = "<group>"; };
+		5C8AE830B2E28BA23C775400 /* Pods-PopUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopUp.debug.xcconfig"; path = "Target Support Files/Pods-PopUp/Pods-PopUp.debug.xcconfig"; sourceTree = "<group>"; };
 		84A1CB862A389F330058B8C7 /* PopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A1CB892A389F330058B8C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A1CB8B2A389F330058B8C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7B4DBDA9CF87717BBD0E44 /* Pods_PopUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38E2F965B8D6AA1688985044 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C8AE830B2E28BA23C775400 /* Pods-PopUp.debug.xcconfig */,
+				4282367FBCCE581FB1FFB7B0 /* Pods-PopUp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84A1CB7D2A389F330058B8C7 = {
 			isa = PBXGroup;
 			children = (
 				84A1CB882A389F330058B8C7 /* PopUp */,
 				84A1CB872A389F330058B8C7 /* Products */,
+				38E2F965B8D6AA1688985044 /* Pods */,
+				EBFECD8DABCEAC98ED672A43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,14 @@
 			path = PopUp;
 			sourceTree = "<group>";
 		};
+		EBFECD8DABCEAC98ED672A43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C36CF4B3E754B795EC7AE8B /* Pods_PopUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A1CB9A2A389F340058B8C7 /* Build configuration list for PBXNativeTarget "PopUp" */;
 			buildPhases = (
+				85CC90DEAB1F699627E10E8F /* [CP] Check Pods Manifest.lock */,
 				84A1CB822A389F330058B8C7 /* Sources */,
 				84A1CB832A389F330058B8C7 /* Frameworks */,
 				84A1CB842A389F330058B8C7 /* Resources */,
+				299783FA7945866B3EB5563C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299783FA7945866B3EB5563C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopUp/Pods-PopUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85CC90DEAB1F699627E10E8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PopUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84A1CB822A389F330058B8C7 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		84A1CB9B2A389F340058B8C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8AE830B2E28BA23C775400 /* Pods-PopUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +383,7 @@
 		};
 		84A1CB9C2A389F340058B8C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4282367FBCCE581FB1FFB7B0 /* Pods-PopUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
